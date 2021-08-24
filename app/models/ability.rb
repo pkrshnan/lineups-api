@@ -9,4 +9,6 @@ class Ability < ApplicationRecord
   }
 
   belongs_to :agent
+
+  has_many :lineups
 end

@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2021_08_24_165553) do
   create_table "lineups", force: :cascade do |t|
     t.text "location", null: false
     t.text "description"
-    t.text "link"
+    t.text "link", null: false
     t.string "author"
     t.bigint "map_id", null: false
     t.bigint "ability_id", null: false
