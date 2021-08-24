@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Ability < ApplicationRecord
   enum ability_type: {
     passive: 0,

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Agent < ApplicationRecord
   enum role: {
     sentinel: 0,

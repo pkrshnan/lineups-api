@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AgentsController < ApplicationController
   def index
     agents = Agent.all.includes(:abilities)

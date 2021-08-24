@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AbilitySerializer < ActiveModel::Serializer
   attributes :id, :name, :description, :lineups, :ability_type
 

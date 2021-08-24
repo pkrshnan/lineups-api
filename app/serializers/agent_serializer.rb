@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AgentSerializer < ActiveModel::Serializer
   attributes :id, :name, :description, :role, :abilities
 
