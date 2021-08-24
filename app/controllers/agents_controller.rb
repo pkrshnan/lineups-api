@@ -3,4 +3,9 @@ class AgentsController < ApplicationController
     agents = Agent.all.includes(:abilities)
     render json: agents
   end
+
+  def show
+    agent = Agent.find(params[:id])
+    render json: agent
+  end
 end
