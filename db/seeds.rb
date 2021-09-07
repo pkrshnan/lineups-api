@@ -18,7 +18,7 @@ agents_hash = [
       {
         name: 'Incendiary',
         description: 'EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
@@ -51,7 +51,7 @@ agents_hash = [
       {
         name: 'Dark Cover',
         description: 'EQUIP a shadow orb, entering a phased world to place and target the orbs. PRESS the ability key to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. HOLD FIRE while targeting to move the marker further away. HOLD SECONDARY FIRE while targeting to move the marker closer. PRESS RELOAD to toggle normal targeting view.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :signature
       },
       {
@@ -111,13 +111,13 @@ agents_hash = [
       {
         name: 'Snake Bite',
         description: 'EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and applies Vulnerable.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
         name: 'Poison Cloud',
         description: 'EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. RE-USE the ability to create a toxic gas cloud at the cost of fuel. This ability can be RE-USED more than once and can be picked up to be REDEPLOYED.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
@@ -155,7 +155,7 @@ agents_hash = [
       {
         name: 'Hot Hands',
         description: 'EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :signature
       },
       {
@@ -173,14 +173,14 @@ agents_hash = [
       {
         name: 'Boom Bot',
         description: 'EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
         name: 'Blast Pack',
         description: 'INSTANTLY throw a Blast Pack that will stick to surfaces. RE-USE the ability after deployment to detonate, damaging and moving anything hit.',
         ability_type: :basic,
-        lineups: true
+        has_lineups: true
       },
       {
         name: 'Paint Shells',
@@ -298,13 +298,13 @@ agents_hash = [
       {
         name: 'Shock Bolt',
         description: 'EQUIP a bow with shock bolt. FIRE to send the explosive bolt forward, detonating upon collision and damaging players nearby. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
         name: 'Recon Bolt',
         description: 'EQUIP a bow with recon bolt. FIRE to send the recon bolt forward, activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. Enemies can destroy this bolt. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :signature
       },
       {
@@ -376,7 +376,7 @@ agents_hash = [
       {
         name: 'FRAG/MENT',
         description: 'EQUIP an explosive fragment. FIRE to throw. The fragment sticks to the floor and explodes multiple times, dealing near lethal damage at the center with each explosion.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
@@ -387,7 +387,7 @@ agents_hash = [
       {
         name: 'ZERO/POINT',
         description: 'EQUIP a suppression blade. FIRE to throw. The blade sticks to the first surface it hits, winds up, and suppresses anyone in the radius of the explosion.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :signature
       },
       {
@@ -405,13 +405,13 @@ agents_hash = [
       {
         name: 'Barrier Orb',
         description: 'EQUIP a barrier orb. FIRE places a wall that fortifies after a few seconds. ALT FIRE rotates the targeter.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
         name: 'Slow Orb',
         description: 'EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, creating a lingering field that slows players caught inside of it.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
@@ -434,19 +434,19 @@ agents_hash = [
       {
         name: 'Trapwire',
         description: 'EQUIP a trapwire. FIRE to place a destructible and covert tripwire at the targeted location, creating a line that spans between the placed location and the wall opposite. Enemy players who cross a tripwire will be tethered, revealed, and dazed after a short period if they do not destroy the device in time. This ability can be picked up to be REDEPLOYED.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
         name: 'Cyber Cage',
         description: 'INSTANTLY toss the cyber cage in front of Cypher. ACTIVATE to create a zone that blocks vision and plays an audio cue when enemies pass through it.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
         name: 'Spycam',
         description: "EQUIP a spycam. FIRE to place the spycam at the targeted location. RE-USE this ability to take control of the camera's view. While in control of the camera, FIRE to shoot a marking dart. This dart will reveal the location of any player struck by the dart.",
-        lineups: true,
+        has_lineups: true,
         ability_type: :signature
       },
       {
@@ -464,7 +464,7 @@ agents_hash = [
       {
         name: 'Nanoswarm',
         description: 'EQUIP a Nanoswarm grenade. FIRE to throw the grenade. Upon landing, the Nanoswarm goes covert. ACTIVATE the Nanoswarm to deploy a damaging swarm of nanobots.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :basic
       },
       {
@@ -480,7 +480,7 @@ agents_hash = [
       {
         name: 'Lockdown',
         description: 'EQUIP the Lockdown device. FIRE to deploy the device. After a long windup, the device Detains all enemies caught in the radius. The device can be destroyed by enemies.',
-        lineups: true,
+        has_lineups: true,
         ability_type: :ultimate
       }
     ]

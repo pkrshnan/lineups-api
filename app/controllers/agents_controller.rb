@@ -7,7 +7,7 @@ class AgentsController < ApplicationController
   end
 
   def show
-    agent = Agent.find(params[:id])
+    agent = Agent.find_by!(name: params[:name].downcase.titlecase)
     render json: agent
   end
 end

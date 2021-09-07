@@ -9,7 +9,7 @@ class CreateLineups < ActiveRecord::Migration[6.1]
       t.string :author
 
       t.references :map, null: false, index: true, foreign_key: { to_table: :maps }
-      t.references :ability, null: false, index: true, foreign_key: { to_table: :agents }
+      t.references :ability, null: false, index: true, foreign_key: { to_table: :abilities }
 
       t.timestamps
     end

@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_08_24_165553) do
   create_table "abilities", force: :cascade do |t|
     t.string "name", null: false
     t.text "description", null: false
-    t.boolean "lineups", default: false
+    t.boolean "has_lineups", default: false
     t.integer "ability_type", default: 1, null: false
     t.bigint "agent_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -55,6 +55,6 @@ ActiveRecord::Schema.define(version: 2021_08_24_165553) do
   end
 
   add_foreign_key "abilities", "agents"
-  add_foreign_key "lineups", "agents", column: "ability_id"
+  add_foreign_key "lineups", "abilities"
   add_foreign_key "lineups", "maps"
 end
